@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>행복한 스마트 IT</title>
+</head>
+<body>
+	<script>
+		var total=0;
+		var total2=0;
+		var total3=0;
+		for (var a=0; a<101; a++){
+		if (a%2==0){
+	    total+=a; 
+		}
+		else if (a%2==1){
+        total2+=a;
+		}
+		total3+=a;
+
+        }
+		document.write("짝수값은"+total+"입니다"+"<br>");
+        document.write("홀수값은"+total2+"입니다"+"<br>");     
+        document.write("전체값은"+total3+"입니다"+"<br>");
+
+        var input;
+        input=prompt("3.정수를 입력하세요");
+        input=parseInt(input);
+        for(var b=1; b<10; b++){
+        document.write(input+"x"+b+"="+input*b+"<br>");
+        }
+        var ssd1=0;
+        var ssd2=0;
+        var ssd3=0;
+        var ssd4=0;
+        for(var c=1; c<6; c++){
+        var s;
+        s=prompt("4~5.정수를 입력하세요");
+        s=parseInt(s);
+        ssd1+=s;
+        if (s>0){
+        ssd2+=s;
+
+        }
+        
+
+        }
+        ssd3=ssd1/5;
+        ssd4=ssd2/5;
+        document.write("5개 정수의 합"+ssd1+"평균은"+ssd3+"입니다");
+        document.write("5개 양의 정수합"+ssd2+"평균은"+ssd4+"입니다");
+        var to1=0
+        var to2=0
+        var to3=0
+        var hdd1;
+        hdd1=prompt("6~8.정수를 입력하세요");
+        var hdd2;
+        hdd2=prompt("6~8.정수를 입력하세요");
+        hdd1=parseInt(hdd1);
+        hdd2=parseInt(hdd2);
+        var big;
+        var small;
+        if(hdd1>hdd2){
+        big=hdd1;
+        small=hdd2;
+        }
+        else{
+        big=hdd2;
+        small=hdd1;
+        }
+        for(var a=small; a<=big; a++){
+        to1+=a;
+        if(a%2==0){
+        to2+=a;
+        }
+        else if (a%2==1){
+        to3+=a;
+
+        }
+        }
+        document.write("두정수 사이의 합"+to1+"입니다");
+        document.write("두정수 사이의 짝수합"+to2+"입니다");
+        document.write("두정수 사이의 홀수합"+to3+"입니다");
+
+
+
+	</script>
+</body>
+</html>

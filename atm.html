@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM</title>
+</head>
+<body>
+<script>
+ var cost;
+ cost= prompt("카드번호를 입력하세요");
+ var total= 500000;
+ var task = prompt ("1:입금 2:출금 3:잔액조회");
+ switch (task){
+ 	case "1":
+ 		var insert= prompt("얼마를 입금하시겠습니까?");
+ 		insert=parseInt(insert);
+ 		total+=insert;
+    document.write("잔액은"+total+"입니다")
+ 		break;
+ 	case "2":
+ 	  var outsert= prompt("얼마를 출금하시겠습니까?");
+ 	  outsert=parseInt(outsert);
+ 	  total-=outsert;
+ 	  document.write("잔액은"+total+"입니다");
+ 	  break;
+ 	case "3":
+ 	 document.write("잔액은"+total+"입니다");
+ 	 break;
+ }
+ </script>
+</body>
+</html>

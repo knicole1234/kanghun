@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>행복한 스마트 IT</title>
+</head>
+<body>
+<script>
+var i;
+var s= new Array();
+var SIZE=5;
+var sum=0;
+var cnt=0;
+
+for(i=0; i<SIZE; i++){
+s[i]=Number(prompt("정수입력",0));
+  if(s[i]<=0)
+  	continue;
+  document.write(s[i]+"양수입니다"+"<BR>");
+  sum+=s[i];
+  cnt++;
+
+
+	document.write("합은"+sum+"<BR>");
+    document.write("평균은"+sum/cnt);
+}
+</script>
+</body>
+</html>
